@@ -1,58 +1,175 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git-Github</title>
-    <link rel="stylesheet" href="estilos/style.css">
+<meta charset="UTF-8"/>
+<title>Tudo sobre Google Glass.</title>
+<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+<!-- type é opcional no html5 -->
 </head>
+<script	 src="_javascript/funcoes.js">
+</script>
 
 <body>
-    <main>
-        <header>
-            </h1>Cursos Professor Carlos Kley</h1>
-            <h2>Cursos Gratis - Git-Github</h2>
-            <img src="imagens/Git.jpg" alt="Curso Git-GitHub">
-            
-        </header>
-        <article>
-            <h2>- Curso de JavaScriopt JQuery</h2>
-            <img class="lado" src="Imagens/javascript.png" alt="">
-            <p><i>Este curso é pago.</i></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea repellendus nihil deleniti nobis, velit aliquid ad, nisi, tempore assumenda molestiae. Facere quam, a recusandae iusto excepturi neque corporis sed.</p>
-            <p><a href="">Acesso o curso online</a></p>
+<div id="interface">
+<!-- CABEÇALHO =========================== -->
+<header id="cabecalho">
+<hgroup><!-- hgroup cria um grupo de títulos -->
+	<h1>Google Glass</h1>
+	<h2>A revolução do Google está chegando</h2>
+</hgroup>
 
-        </article>
-        <article>
-            <h2>- Curso completo de Python</h2>
-            <img class="lado" src="Imagens/python.png" alt="">
-            <p>
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor eveniet quas odit numquam nostrum consequatur, iste quos quia, ea ut repellendus et officiis. Quidem consectetur illo, natus deleniti commod
-               <p><a href="">Acesso o curso online</a></p>
-        </article>
-        Lista de Cursos:
-        <ul>
-            <li>
-                Python
-            </li>
-                <li>JavaScriopt</li> 
-                <li>
-                    
-                    Java
-                    </li>
-                    <li>
-                    C++
-                </li>
-                    <li>
-                    Visual Studio
-                </li>
-                    <li>
-                    PHP
-                </li>
+<img id="icone" src="_imagens/glass-oculos-preto-peq.png"/> <!-- SRC = source, fonte, origem-->
 
-        </ul>
-    </main>
+<nav id="menu">
+<h1>Menu Principal</h1>
+	<ul type="disc" >
+	<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
+
+	<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a></li>
+
+	<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
+
+	<li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimedia</a></li>
+
+	<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Contato</a></li>
+	</ul>
+<!-- Cria uma área de navegação, tag nova do html5-->
+</nav>
+
+</header> <!-- no html5 header cria uma seção de cabeçalho-->
+<!-- =========================== -->
+<!-- <br> quebra de linha, break row-->
+
+<!-- ******************************************************************* -->
+<!-- Seção principal do site, à esquerda da página (div) -->
+<!-- ******************************************************************* -->
+
+<section id="corpo">
+	<article id="noticia-principal"> <!-- Uma seção pode ter vários artigos-->
+
+<header id="cabecalho-artigo">
+	<!-- Esse grupo de cabeçalho permite formatar h2 diferentemente dos h2 que stão definidos
+	no article.
+	Podems ter vários header, para criar vários cabeçalhos: de artigo, de seção... etc.
+	Esse cabeçalho é o cabeçalho de article.-->
+<hgroup>
+<h3>Tecnologia >&nbsp;Inovações</h3> <!-- &nbsp = no break space ou espaço sem quebra. -->
+<h1>Saiba tudo sobre o Google Glass</h1>
+<h2>por Carlos Klei</h2>
+<h3 class="direita">Atualizado em 20/Maio/2019</h3>
+<!-- A class direita serve para sobrepor a configuração de h3 em cabecalho-artigo.-->
+</hgroup>
+</header>
+
+<!-- Pre-formatado: Para expressões formatadas, como por exemplo, um fragmento de código de programação.-->
+<!--
+<pre> 
+<code>
+int main(){	
+	#include &lt;iostream.h&gt;
+	   cout << "Olá Mundo!";
+	   return=0;;
+	  }
+
+	  </code>
+</pre>
+-->
+<h2 style = "text-align:center;">O que é?</h2>
+<p style = "text-align:justify; text-indent:50px">O <b>Google Glass</b> <del>é um acessório em forma de óculos</del> que possibilita a interação dos usuários com diversos conteúdos em <span style = "font-weight:900;">realidade</span> aumentada. Também chamado de <a href="http://glass.google.com" target="_blank">Project Glass</a>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, <span style="text-decoration:underline;">enviar mensagens instantâneas</span> <span style="text-decoration:overline">e realizar</span> vídeo&shy;con&shy;ferên&shy;cias. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o <em>Google Glass</em> encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de <span style = "font-weight:bolder;">tela para o acessório.</span></p>
+
+<!--
+1 &shy = Soft Hyphen. hifenização na quebra...
+2 <em> significa enfase, dá ênfase ao texto conforme padrões do navegador. - substitui estilo italico, <i>
+3 a tag <del> do html5 substitui <s> antiga que significa riscado.
+4 a tag <s> que subilina foi substituido por formatação css no html5
+5 <span> é utilizado para formatar pequenos blocos de texto. E é donfigurado com css, style.
+6 "font-weight:bolder" mais negrito que o negrito bold
+7 style = "text-align:center", o alinhamento hoje é feito com css e não mais com align="center" dentro de tag.
+-->
+
+<figure class="foto-legenda">
+<img src="_imagens/glass-quadro-homem-mulher.jpg"/>
+	<figcaption>
+		<h3>Google Glass</h3>
+		<p>Uma nova maneira de ver o mundo.</p>
+	</figcaption>
+</figure>
+<!-- Tag nova no html5, <figure> toda imagem que fizer parte de um conteúdo, será colocando entre essas tags.-->
+<h2>Data de lançamento</h2>
+
+<p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p>
+
+
+<h2>Especificações Técnicas</h2>
+
+<table id="tabelaspec">
+<caption>Tabela Técnica do Google Glass <span>Mar/2013<span></caption>
+
+<!--TR table row (linha) e TD table data (celulas na linha) -->
+
+<tr>
+	<td class="ce">Tela:</td>
+	<td class="cd">Resolução equivalente a tela de 25"</td>
+</tr>
+<tr>
+	<td rowspan="2" class="ce">Camera:</td>
+	<!-- rowspan diz que a célula camera ocupa duas linhas... -->
+	<!-- rowspan e colspan expansão de linhas e colunas -->
+	<td  class="cd">5MP para fotos</td>
+</tr>
+	<tr>
+		<td  class="cd">720p para vídeos</td> <!-- rowspan atinge essa linha... -->
+	</tr>
+<tr>
+	<td rowspan="2" class="ce">Conectividade:</td>
+	<td class="cd">Wi-Fi</td>
+</tr>
+	<tr><td  class="cd">Bluetooth</td></tr> <!-- rowspan atinge essa linha... -->
+<tr>
+	<td class="ce">Memória Interna:</td>
+	<td  class="cd">12GB</td>
+</tr>
+</table>
+
+<h2>Como funciona</h2>
+<p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça.</p>
+
+<h2>O que você pode fazer com o Google Glasses?</h2>
+<p>O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-<wbr/>humano”, já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.</p>
+
+<!-- wbr é uma tag nova do html5 serve para quebrar uma palavra wordbreakrow, (hifenizar) caso seja necessário... Todas as vezes que o super-humano estiver na borda do navegador ele poderá ser quebrado. 
+por exemplo se diminuirmor (apertarmos) o navegador.
+- bom para trabalhar com endereços grandes de sites, usar depois do ponto.-->
+
+
+[AQUI ENTRA UM VÍDEO]
+</article>
+<!-- ******************************************************************* -->
+</section> <!-- FINAL DA SEÇÃO PRINCIPAL (CORPO) --> 
+<!-- ******************************************************************* -->
+
+<!-- ******************************************************************* -->
+<aside id="lateral"> <!-- <aside> Seção lateral do site (do lado) -->
+<!-- ******************************************************************* -->	
+ <h1>Outras Notícias</h1>
+ <h2>Vídeo mais recente</h2>
+
+ [AQUI ENTRA UM VÍDEO]
+
+ <h2>Novidades no Glass</h2>
+
+ <p>O Google enfim revelou as especificações completas do Google Glass, e com ele uma surpresa ainda inédita no mercado: a gigante das buscas usará um sistema de áudio baseado na transdução por condução. Através das hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de microvibrações em determinados ossos de sua cabeça, sem usar nenhum tipo de alto-falante.</p>
+
+ <p>Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que, em proporção, equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.</p>
+
+</aside>
+ <!-- ******************************************************************* -->	
+<footer id="rodape">
+<P>Copyright &copy; 2019 - by Carlos Klei <br>
+<a href="https://www.facebook.com/carlos.klei.9" target="_blank">Facebook</a> | Twitter</P>
+</footer>
+</div>
 </body>
-
 </html>
